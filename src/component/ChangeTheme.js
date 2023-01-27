@@ -1,9 +1,9 @@
 import React from 'react'
-import {UseTheme} from '../context/ThemeContexts';
+import  {UseTheme} from '../context/ThemeContexts';
 
 
 function ChangeTheme() {
- const {theme,setTheme}=UseTheme();
+ const {theme,toggle}=UseTheme();
 
 
   return (
@@ -14,7 +14,7 @@ function ChangeTheme() {
     
     <br/>
     <br/>
-    <button onClick={()=>setTheme("dark")}>ChangeTheme</button>
+    <button onClick={()=>toggle}>ChangeTheme</button>
     <hr/>
     </div>
   )

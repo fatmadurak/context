@@ -5,12 +5,19 @@ const ThemeContext=createContext();
 
 
 
- export  const ThemeContextProvider=({children})=>{
+  export  const ThemeContextProvider=({children})=>{
  const {theme,setTheme}=useState("light")
-    const values={
+
+ const toggle=()=>{
+
+ setTheme((prev)=>(prev==="light"?"dark":"light"))
+
+
+ }
+ const values={
 
       theme,
-      setTheme,
+      toggle,
 
     }
 
