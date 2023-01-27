@@ -17,7 +17,6 @@ const ThemeContext=createContext();
 return <ThemeContext.Provider value={values}> {children}</ThemeContext.Provider>
 
 
-
 }
 
 export const UseTheme=()=>{
