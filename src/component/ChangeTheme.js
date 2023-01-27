@@ -14,7 +14,7 @@ function ChangeTheme() {
     
     <br/>
     <br/>
-    <button onClick={()=>setTheme("dark")}>ChangeTheme</button>
+    <button onClick={()=>setTheme("light")}>ChangeTheme</button>
     <hr/>
     </div>
   )
