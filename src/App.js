@@ -1,7 +1,7 @@
 
 import './App.css';
 import ChangeTheme from './component/ChangeTheme';
-import { ThemeContextProvider } from './context/ThemeContext';
+import { ThemeContextProvider } from './context/ThemeContexts';
 
 function App() {
   return (
