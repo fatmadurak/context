@@ -5,8 +5,8 @@ const ThemeContext=createContext();
 
 
 
-export const ThemeContextProvider=({children})=>{
- const {theme,setTheme}=useState();
+ export const ThemeContextProvider=({children})=>{
+ const {theme,setTheme}=useState("light");
     const values={
 
       theme,
@@ -20,9 +20,7 @@ return <ThemeContext.Provider value={values}> {children}</ThemeContext.Provider>
 
 }
 
-
-
-export const UseContext=()=>{
+export const UseTheme=()=>{
 
 const context=useContext(ThemeContext);
 
@@ -34,6 +32,6 @@ if (context===undefined) {
 
 }
 
-
+return context;
 
 }
